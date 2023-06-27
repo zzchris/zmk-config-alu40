@@ -45,9 +45,11 @@
             bindings = <
 &kp ESCAPE  &kp NUMBER_1  &kp N2  &kp N3   &kp N4   &kp N5   &kp N6     &kp N7     &kp N8         &kp MINUS      &kp BACKSPACE         &trans
      &mo 1        &kp F1  &kp F2  &kp F3   &kp F4   &kp F5   &kp F6  &kp MINUS  &kp EQUAL      &kp NUMBER_9       &kp NUMBER_0  &kp BACKSLASH
-     &mo 3        &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12     &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET         &trans
-    &tog 2        &tog 1  &trans  &trans   &trans   &trans   &trans      &mo 1     &trans        &kp C_PREV         &kp C_NEXT     &play_mute
+    &trans        &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12     &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET         &trans
+    &tog 2        &tog 0   &mo 3  &trans   &trans   &trans   &trans      &mo 1     &trans        &kp C_PREV         &kp C_NEXT     &play_mute
             >;
+
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         raise {
