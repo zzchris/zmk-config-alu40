@@ -32,10 +32,21 @@
             // | PLAY  | LCTL | LALT | LGUI | LOWR |     SPACE    |  RAIS | LARW | UARW | DARW  |  RARW |
 
             bindings = <
-  &kp TAB        &kp SQT     &kp COMMA    &kp PERIOD      &kp P      &kp Y      &kp F  &kp G     &kp C   &kp R      &kp L    &kp DEL
-    &mo 1          &kp A         &kp O         &kp E      &kp U      &kp I      &kp D  &kp H     &kp T   &kp N      &kp S  &kp SLASH
-&kp LSHFT  &kp SEMICOLON         &kp Q         &kp J      &kp K      &kp X      &kp B  &kp M     &kp W   &kp V      &kp Z  &kp ENTER
-&kp LCTRL         &trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp GRAVE  &kp SPACE  &kp SPACE  &mo 1  &kp LEFT  &trans  &kp RIGHT      &mo 4
+  &kp TAB        &kp SQT     &kp COMMA    &kp PERIOD      &kp P      &kp Y      &kp F     &kp G     &kp C   &kp R      &kp L    &kp DEL
+    &mo 2          &kp A         &kp O         &kp E      &kp U      &kp I      &kp D     &kp H     &kp T   &kp N      &kp S  &kp SLASH
+&kp LSHFT  &kp SEMICOLON         &kp Q         &kp J      &kp K      &kp X      &kp B     &kp M     &kp W   &kp V      &kp Z  &kp ENTER
+&kp LCTRL         &trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp GRAVE  &kp SPACE  &kp SPACE  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT      &mo 4
+            >;
+
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+        };
+
+        raise {
+            bindings = <
+       &kp TAB   &kp Q         &kp W         &kp E   &kp R      &kp T      &kp Y  &kp U      &kp I       &kp O          &kp P    &kp DEL
+         &mo 2   &kp A         &kp S         &kp D   &kp F      &kp G      &kp H  &kp J      &kp K       &kp L  &kp SEMICOLON    &kp SQT
+&kp LEFT_SHIFT   &kp Z         &kp X         &kp C   &kp V      &kp B      &kp N  &kp M  &kp COMMA  &kp PERIOD      &kp SLASH  &kp ENTER
+     &kp LCTRL  &trans  &kp LEFT_WIN  &kp LEFT_ALT  &trans  &kp SPACE  &kp SPACE  &mo 2   &kp LEFT      &trans      &kp RIGHT      &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
@@ -44,23 +55,12 @@
         lower {
             bindings = <
 &kp ESCAPE  &kp NUMBER_1  &kp N2  &kp N3   &kp N4   &kp N5   &kp N6     &kp N7     &kp N8         &kp MINUS      &kp BACKSPACE         &trans
-     &mo 1        &kp F1  &kp F2  &kp F3   &kp F4   &kp F5   &kp F6  &kp MINUS  &kp EQUAL      &kp NUMBER_9       &kp NUMBER_0  &kp BACKSLASH
+     &mo 2        &kp F1  &kp F2  &kp F3   &kp F4   &kp F5   &kp F6  &kp MINUS  &kp EQUAL      &kp NUMBER_9       &kp NUMBER_0  &kp BACKSLASH
     &trans        &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12     &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET         &trans
-    &tog 2        &tog 0   &mo 3  &trans   &trans   &trans   &trans      &mo 1     &trans        &kp C_PREV         &kp C_NEXT     &play_mute
+    &tog 1        &tog 0   &mo 4  &trans   &trans   &trans   &trans      &mo 2     &trans        &kp C_PREV         &kp C_NEXT     &play_mute
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
-        };
-
-        raise {
-            bindings = <
-       &kp TAB   &kp Q         &kp W         &kp E   &kp R      &kp T      &kp Y  &kp U      &kp I       &kp O          &kp P    &kp DEL
-         &mo 1   &kp A         &kp S         &kp D   &kp F      &kp G      &kp H  &kp J      &kp K       &kp L  &kp SEMICOLON    &kp SQT
-&kp LEFT_SHIFT   &kp Z         &kp X         &kp C   &kp V      &kp B      &kp N  &kp M  &kp COMMA  &kp PERIOD      &kp SLASH  &kp ENTER
-     &kp LCTRL  &trans  &kp LEFT_WIN  &kp LEFT_ALT  &trans  &kp SPACE  &kp SPACE  &mo 1   &kp LEFT      &trans      &kp RIGHT      &mo 4
-            >;
-
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
         control {
