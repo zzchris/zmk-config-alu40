@@ -32,7 +32,7 @@
             // | PLAY  | LCTL | LALT | LGUI | LOWR |     SPACE    |  RAIS | LARW | UARW | DARW  |  RARW |
 
             bindings = <
-  &kp TAB        &kp SQT     &kp COMMA    &kp PERIOD      &kp P      &kp Y      &kp F  &kp G     &kp C     &kp R         &kp L      &kp A
+  &kp TAB        &kp SQT     &kp COMMA    &kp PERIOD      &kp P      &kp Y      &kp F  &kp G     &kp C     &kp R         &kp L      &mo 4
     &mo 2          &kp A         &kp O         &kp E      &kp U      &kp I      &kp D  &kp H     &kp T     &kp N         &kp S  &kp SLASH
 &kp LSHFT  &kp SEMICOLON         &kp Q         &kp J      &kp K      &kp X      &kp B  &kp M     &kp W     &kp V         &kp Z  &kp ENTER
 &kp LCTRL         &trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp GRAVE  &kp SPACE  &kp SPACE  &mo 2  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
