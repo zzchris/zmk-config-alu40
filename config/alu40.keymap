@@ -32,18 +32,18 @@
             // | PLAY  | LCTL | LALT | LGUI | LOWR |     SPACE    |  RAIS | LARW | UARW | DARW  |  RARW |
 
             bindings = <
-  &kp TAB        &kp SQT     &kp COMMA    &kp PERIOD      &kp P      &kp Y      &kp F  &kp G     &kp C     &kp R         &kp L      &mo 4
+  &kp TAB        &kp SQT     &kp COMMA    &kp PERIOD      &kp P      &kp Y      &kp F  &kp G     &kp C     &kp R         &kp L      &mo 3
     &mo 2          &kp A         &kp O         &kp E      &kp U      &kp I      &kp D  &kp H     &kp T     &kp N         &kp S  &kp SLASH
 &kp LSHFT  &kp SEMICOLON         &kp Q         &kp J      &kp K      &kp X      &kp B  &kp M     &kp W     &kp V         &kp Z  &kp ENTER
-&kp LCTRL          &mo 4  &kp LEFT_WIN  &kp LEFT_ALT  &kp GRAVE  &kp SPACE  &kp SPACE  &mo 2  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&kp LCTRL          &mo 3  &kp LEFT_WIN  &kp LEFT_ALT  &kp GRAVE  &kp SPACE  &kp SPACE  &mo 2  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp UP DOWN>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
         raise {
             bindings = <
-       &kp TAB   &kp Q         &kp W         &kp E   &kp R      &kp T      &kp Y  &kp U      &kp I       &kp O          &kp P      &mo 4
+       &kp TAB   &kp Q         &kp W         &kp E   &kp R      &kp T      &kp Y  &kp U      &kp I       &kp O          &kp P      &mo 3
          &mo 2   &kp A         &kp S         &kp D   &kp F      &kp G      &kp H  &kp J      &kp K       &kp L  &kp SEMICOLON    &kp SQT
 &kp LEFT_SHIFT   &kp Z         &kp X         &kp C   &kp V      &kp B      &kp N  &kp M  &kp COMMA  &kp PERIOD      &kp SLASH  &kp ENTER
      &kp LCTRL  &trans  &kp LEFT_WIN  &kp LEFT_ALT  &trans  &kp SPACE  &kp SPACE  &mo 2   &kp LEFT    &kp DOWN   &kp UP_ARROW  &kp RIGHT
@@ -71,7 +71,7 @@
 &trans  &rgb_ug RGB_TOG           &trans           &trans           &trans           &trans  &trans  &trans  &bt BT_PRV  &trans  &trans  &bt BT_NXT
             >;
 
-            sensor-bindings = <&inc_dec_kp UP_ARROW 0>;
+            sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
         layer_4 {
