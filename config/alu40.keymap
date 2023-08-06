@@ -38,7 +38,7 @@
 &kp LCTRL          &mo 4  &kp LEFT_WIN  &kp LEFT_ALT  &kp GRAVE  &kp SPACE  &kp SPACE  &mo 2  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
         raise {
@@ -82,7 +82,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp UP DOWN>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
     };
 };
