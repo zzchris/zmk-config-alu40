@@ -49,7 +49,7 @@
      &kp LCTRL  &trans  &kp LEFT_WIN  &kp LEFT_ALT  &trans  &kp SPACE  &kp SPACE  &mo 2   &kp LEFT    &kp DOWN   &kp UP_ARROW  &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT RGIHT>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
         lower {
