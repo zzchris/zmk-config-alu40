@@ -37,8 +37,6 @@
 &kp LSHFT  &kp SEMICOLON         &kp Q         &kp J      &kp K      &kp X      &kp B  &kp M     &kp W     &kp V         &kp Z  &kp ENTER
 &kp LCTRL         &trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp GRAVE  &kp SPACE  &kp SPACE  &mo 2  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
             >;
-
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
         raise {
