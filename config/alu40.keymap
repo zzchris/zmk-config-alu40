@@ -57,6 +57,8 @@
      &mo 3        &kp F7      &kp F8      &kp F9  &kp F10  &kp F11  &kp F12     &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET         &trans
     &tog 1        &tog 0  &kp C_PREV  &kp C_NEXT   &trans   &trans   &trans      &mo 2     &trans        &kp C_PREV         &kp C_NEXT     &play_mute
             >;
+
+            sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
         control {
@@ -66,8 +68,6 @@
 &trans  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &trans  &trans      &trans  &trans  &trans  &sys_reset
 &trans  &rgb_ug RGB_TOG           &trans           &trans           &trans           &trans  &trans  &trans  &bt BT_PRV  &trans  &trans  &bt BT_NXT
             >;
-
-            sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
     };
 };
