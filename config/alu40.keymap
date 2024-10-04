@@ -15,9 +15,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "PLAY_MUTE";
             #binding-cells = <0>;
-            bindings =
-                <&kp C_PLAY_PAUSE>,
-                <&kp C_MUTE>;
+            bindings = <&kp C_PLAY_PAUSE>, <&kp C_MUTE>;
         };
     };
 
@@ -32,10 +30,10 @@
             // | PLAY  | LCTL | LALT | LGUI | LOWR |     SPACE    |  RAIS | LARW | UARW | DARW  |  RARW |
 
             bindings = <
-  &kp TAB        &kp SQT     &kp COMMA    &kp PERIOD      &kp P      &kp Y      &kp F  &kp G     &kp C     &kp R         &kp L      &mo 3
-    &mo 2          &kp A         &kp O         &kp E      &kp U      &kp I      &kp D  &kp H     &kp T     &kp N         &kp S  &kp SLASH
-&kp LSHFT  &kp SEMICOLON         &kp Q         &kp J      &kp K      &kp X      &kp B  &kp M     &kp W     &kp V         &kp Z  &kp ENTER
-&kp LCTRL         &trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp GRAVE  &kp SPACE  &kp SPACE  &mo 2  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&kp TAB    &kp SQT        &kp COMMA     &kp PERIOD    &kp P      &kp Y          &kp F      &kp G  &kp C     &kp R     &kp L         &mo 3
+&mo 2      &kp A          &kp O         &kp E         &kp U      &kp I          &kp D      &kp H  &kp T     &kp N     &kp S         &kp SLASH
+&kp LSHFT  &kp SEMICOLON  &kp Q         &kp J         &kp K      &kp X          &kp B      &kp M  &kp W     &kp V     &kp Z         &kp ENTER
+&kp LCTRL  &trans         &kp LEFT_WIN  &kp LEFT_ALT  &kp GRAVE  &kp RIGHT_ALT  &kp SPACE  &mo 2  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
@@ -43,10 +41,10 @@
 
         raise {
             bindings = <
-       &kp TAB   &kp Q         &kp W         &kp E   &kp R      &kp T      &kp Y  &kp U      &kp I       &kp O          &kp P      &mo 3
-         &mo 2   &kp A         &kp S         &kp D   &kp F      &kp G      &kp H  &kp J      &kp K       &kp L  &kp SEMICOLON    &kp SQT
-&kp LEFT_SHIFT   &kp Z         &kp X         &kp C   &kp V      &kp B      &kp N  &kp M  &kp COMMA  &kp PERIOD      &kp SLASH  &kp ENTER
-     &kp LCTRL  &trans  &kp LEFT_WIN  &kp LEFT_ALT  &trans  &kp SPACE  &kp SPACE  &mo 2   &kp LEFT    &kp DOWN   &kp UP_ARROW  &kp RIGHT
+&kp TAB         &kp Q   &kp W         &kp E         &kp R   &kp T          &kp Y      &kp U  &kp I      &kp O       &kp P          &mo 3
+&mo 2           &kp A   &kp S         &kp D         &kp F   &kp G          &kp H      &kp J  &kp K      &kp L       &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z   &kp X         &kp C         &kp V   &kp B          &kp N      &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &kp ENTER
+&kp LCTRL       &trans  &kp LEFT_WIN  &kp LEFT_ALT  &trans  &kp RIGHT_ALT  &kp SPACE  &mo 2  &kp LEFT   &kp DOWN    &kp UP_ARROW   &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
@@ -54,10 +52,10 @@
 
         lower {
             bindings = <
-&kp ESCAPE  &kp NUMBER_1      &kp N2      &kp N3   &kp N4   &kp N5   &kp N6     &kp N7     &kp N8         &kp MINUS      &kp BACKSPACE         &trans
-     &mo 2        &kp F1      &kp F2      &kp F3   &kp F4   &kp F5   &kp F6  &kp MINUS  &kp EQUAL      &kp NUMBER_9       &kp NUMBER_0  &kp BACKSLASH
-     &mo 3        &kp F7      &kp F8      &kp F9  &kp F10  &kp F11  &kp F12     &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET         &trans
-    &tog 1        &tog 0  &kp C_PREV  &kp C_NEXT   &trans   &trans   &trans      &mo 2     &trans        &kp C_PREV         &kp C_NEXT     &play_mute
+&kp ESCAPE  &kp NUMBER_1  &kp N2      &kp N3      &kp N4   &kp N5   &kp N6   &kp N7     &kp N8     &kp MINUS         &kp BACKSPACE      &trans
+&mo 2       &kp F1        &kp F2      &kp F3      &kp F4   &kp F5   &kp F6   &kp MINUS  &kp EQUAL  &kp NUMBER_9      &kp NUMBER_0       &kp BACKSLASH
+&mo 3       &kp F7        &kp F8      &kp F9      &kp F10  &kp F11  &kp F12  &trans     &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DEL
+&tog 1      &tog 0        &kp C_PREV  &kp C_NEXT  &trans   &trans   &trans   &mo 2      &trans     &kp C_PREV        &kp C_NEXT         &play_mute
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -65,10 +63,10 @@
 
         control {
             bindings = <
-&trans     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4  &trans  &trans      &trans  &trans  &trans      &trans
-&trans  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &trans  &trans      &trans  &trans  &trans  &bt BT_CLR
-&trans  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &trans  &trans      &trans  &trans  &trans  &sys_reset
-&trans  &rgb_ug RGB_TOG           &trans           &trans           &trans           &trans  &trans  &trans  &bt BT_PRV  &trans  &trans  &bt BT_NXT
+&trans  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &trans  &trans  &trans      &trans  &trans  &trans
+&trans  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &trans  &trans  &trans      &trans  &trans  &bt BT_CLR
+&trans  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &trans  &trans  &trans      &trans  &trans  &sys_reset
+&trans  &rgb_ug RGB_TOG  &trans           &trans           &trans           &trans           &trans  &trans  &bt BT_PRV  &trans  &trans  &bt BT_NXT
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
